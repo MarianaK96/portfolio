@@ -1,0 +1,8 @@
+body {
+  background-color: #1a1919;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
