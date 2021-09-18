@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { device } from "../../../globals/breakpoints";
 
 export const ModalStyle = styled.div`
-  @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
   background-color: white;
   display: flex;
   justify-content: space-evenly;
@@ -14,6 +14,11 @@ export const ModalStyle = styled.div`
 
   display: ${({ modal }) => (modal ? "flex" : "none")};
 
+  @media ${device.sm} {
+    padding-top: 7rem;
+    padding-bottom: 6.2rem;
+  }
+
   & > a {
     color: black;
     display: inline;
@@ -21,6 +26,10 @@ export const ModalStyle = styled.div`
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
+
+    @media ${device.sm} {
+      font-size: 1.5rem;
+    }
   }
 
   & > a:hover {
@@ -34,12 +43,24 @@ export const ModalStyle = styled.div`
     margin-top: 0;
     margin-bottom: 0;
   }
-`
+`;
 
 export const CloseBtnStyle = styled.div`
   position: absolute;
   padding: 2.4rem;
   top: 0;
   right: 0;
-`
+
+  @media ${device.sm} {
+    padding: 3rem;
+    right: 4%;
+  }
+
+  & > img {
+    transform: scale(1.2);
+    @media ${device.sm} {
+      transform: scale(1.8);
+    }
+  }
+`;
 // display: ${modal ? "inline" : "hidden"};

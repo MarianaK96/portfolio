@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react"
-import { MobileMenu } from "./header.styles"
-import MenuIcon from "../../../images/menu.svg"
+import React, { useState, useEffect } from "react";
+import { MobileMenu } from "./MobileHeader.styles";
+import MenuIcon from "../../../images/menu.svg";
 
-import { CloseBtnStyle, ModalStyle } from "../modal/modal.styles"
-import CloseIcon from "../../../images/x-circle.svg"
+import { CloseBtnStyle, ModalStyle } from "../../molecules/modal/Modal.styles";
+import CloseIcon from "../../../images/x-circle.svg";
 
-export const Menu = () => {
-  const [modal, setModal] = useState(false)
-  const [icon, setIcon] = useState(true)
+const MobileHeader = () => {
+  const [modal, setModal] = useState(false);
+  const [icon, setIcon] = useState(true);
 
   // let prevScroll = window.pageYOffset
   // let currentScroll
@@ -60,5 +60,7 @@ export const Menu = () => {
         <a href="">Contact</a>
       </ModalStyle>
     </>
-  )
-}
+  );
+};
+
+export default MobileHeader;

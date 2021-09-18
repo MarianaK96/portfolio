@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { device } from "../../../globals/breakpoints";
 
 // export const Wrapper = styled.div`
 //   height: 400px;
@@ -14,22 +15,32 @@ import styled from "styled-components"
 // `
 
 export const HeadingWrapper = styled.div`
-  @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
   & > h1 {
     font-size: 4rem;
     font-style: italic;
     color: #f8f8ff;
     font-family: "Poppins", sans-serif;
+
+    @media ${device.sm} {
+      font-size: 5rem;
+    }
+
+    @media ${device.lg} {
+      font-size: 6rem;
+    }
   }
-`
+`;
 
 export const SubtitleWrapper = styled.div`
-  @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
   & > p {
     font-size: 2rem;
     font-weight: 100;
     line-height: 1.8;
     color: #f8f8ff;
     font-family: "Montserrat", sans-serif;
+
+    @media ${device.sm} {
+      font-size: 2.5rem;
+    }
   }
-`
+`;

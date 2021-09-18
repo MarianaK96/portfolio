@@ -1,14 +1,16 @@
 import React from "react";
 import { TitleWrapper } from "../../components/atoms/about/about.styles";
-import { ImageWrapper } from "../../components/atoms/projects/projectSection.styles";
 import {
   SectionPadding,
   ParagraphWrapper,
   FooterWrapper,
   Underline,
 } from "./projects.styles";
-import { PaddingWrapper } from "../../globals/global.styles";
-import { IconsWrapper } from "../../components/molecules/projects/projectSection.styles";
+import { PaddingWrapper } from "./globals/global.styles";
+import {
+  IconsWrapper,
+  ImageWrapper,
+} from "../src/components/molecules/projectsSection/ProjectSection.styles";
 import GithubIcon from "../../images/github.svg";
 
 const ProjectOnePage = () => {
@@ -25,6 +27,14 @@ const ProjectOnePage = () => {
               alt=""
             />
           </ImageWrapper>
+          <iframe
+            src="https://mk-digital-clock.netlify.app/"
+            title="embedded clock"
+            width="10rem"
+            height="5rem"
+          >
+            {" "}
+          </iframe>
           <ParagraphWrapper>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque

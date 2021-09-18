@@ -1,6 +1,6 @@
-import React from "react"
-import { PaddingWrapper } from "../../../globals/global.styles"
-import { BtnStyle, Underline } from "./discoverBtn.styles"
+import React from "react";
+import { PaddingWrapper } from "../../../globals/global.styles";
+import { BtnStyle, Underline, Animation } from "./discoverBtn.styles";
 
 const DiscoverBtn = () => {
   return (
@@ -8,11 +8,11 @@ const DiscoverBtn = () => {
       <PaddingWrapper>
         <BtnStyle>
           <a href="#aboutMeSection">tell me more</a>
+          <Underline></Underline>
         </BtnStyle>
-        <Underline></Underline>
       </PaddingWrapper>
     </>
-  )
-}
+  );
+};
 
-export default DiscoverBtn
+export default DiscoverBtn;

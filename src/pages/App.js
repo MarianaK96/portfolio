@@ -1,21 +1,29 @@
 import React from "react";
 import { global } from "../globals/global.css";
-import Title from "../components/atoms/title/title";
+import Title from "../components/atoms/title/Title";
 import DiscoverBtn from "../components/atoms/discoverBtn/discoverBtn";
-import AboutMe from "../components/atoms/about/about";
-import Skills from "../components/atoms/skills/skillsSection";
-import Projects from "../components/atoms/projects/projectSection";
-import { Menu, Modal } from "../components/molecules/header/header";
+import AboutSection from "../components/molecules/aboutSection/AboutSection";
+import SkillsSection from "../components/molecules/skillsSection/SkillsSection";
+import ProjectSection from "../components/molecules/projectsSection/ProjectSection";
+import MobileHeader from "../components/organisms/MobileHeader/MobileHeader";
+import WebHeader from "../components/organisms/WebHeader/WebHeader";
+import ScrollBtn from "../components/atoms/scrollBtn/ScrollBtn";
+import Footer from "../components/organisms/Footer/Footer";
 
 const App = () => {
   return (
     <>
-      <Menu />
-      <Title />
-      <DiscoverBtn />
-      <AboutMe />
-      <Skills />
-      <Projects />
+      <span id="homeSection">
+        <WebHeader />
+        <MobileHeader />
+        <Title />
+        <DiscoverBtn />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectSection />
+        <ScrollBtn />
+        <Footer />
+      </span>
     </>
   );
 };

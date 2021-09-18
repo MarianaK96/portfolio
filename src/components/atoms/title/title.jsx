@@ -1,28 +1,29 @@
-import React, { useState } from "react"
-import { Wrapper, HeadingWrapper, SubtitleWrapper } from "../title/title.styles"
-import { PaddingWrapper, PaddingTop } from "../../../globals/global.styles"
+import React, { useState } from "react";
+import { Wrapper, HeadingWrapper, SubtitleWrapper } from "./Title.styles";
+import { PaddingWrapper, PaddingTop } from "../../../globals/global.styles";
 
 const Title = () => {
-  const [on, setOn] = useState(false)
+  const [on, setOn] = useState(false);
 
   return (
     <>
       <PaddingWrapper>
         <PaddingTop></PaddingTop>
         <HeadingWrapper>
-          <h1 id="homeSection">Hello.</h1>
+          <h1>Hello.</h1>
         </HeadingWrapper>
         <SubtitleWrapper>
           <p>
-            I’m Mariana, <br /> a junior web-developer based in London.
+            I’m Mariana, <br /> a junior web-developer currently based in
+            Cardiff.
           </p>
         </SubtitleWrapper>
       </PaddingWrapper>
     </>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;
 
 //BUG
 //className={`${styles["subtitle"]}`} - cannot be READ
