@@ -13,6 +13,7 @@ import {
 } from "./ProjectSection.styles";
 import DigitalClock from "../../../images/clock-image.png";
 import Portfolio from "../../../images/portfolio-image.png";
+import ConversationCards from "../../../images/cards-image.png";
 
 const ProjectSection = () => {
   return (
@@ -27,17 +28,14 @@ const ProjectSection = () => {
             <ImageWrapper>
               <img src={DigitalClock} alt="image of code on a screen" />
             </ImageWrapper>
-            <TestTitle href="/Users/marianakoudela/Desktop/react_portfolio/src/ProjectPage.js">
+            <TestTitle href="/Users/marianakoudela/Desktop/react_portfolio/src/pages/ProjectPage/ProjectPage.js">
               Digital Clock
             </TestTitle>
           </Project>
 
           <Project>
             <ImageWrapper>
-              <img
-                src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="image of code on a screen"
-              />
+              <img src={ConversationCards} alt="image of code on a screen" />
             </ImageWrapper>
             <TestTitle href="/Users/marianakoudela/Desktop/react_portfolio/src/ProjectPage.js">
               Conversation Starters

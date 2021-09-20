@@ -8,8 +8,12 @@ export const ScrollBtnStyles = styled.a`
   bottom: 5%;
   right: 5%;
 
+ 
+  display: ${({ visible }) => (visible ? "block" : "none")};
+
+
   & > img {
-    transform: scale(2);
+    transform: scale(1.5);
     opacity: 0.5;
 
     &:hover {

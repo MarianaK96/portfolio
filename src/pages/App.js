@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { global } from "../globals/global.css";
 import Title from "../components/atoms/title/Title";
 import DiscoverBtn from "../components/atoms/discoverBtn/discoverBtn";
@@ -9,11 +9,13 @@ import MobileHeader from "../components/organisms/MobileHeader/MobileHeader";
 import WebHeader from "../components/organisms/WebHeader/WebHeader";
 import ScrollBtn from "../components/atoms/scrollBtn/ScrollBtn";
 import Footer from "../components/organisms/Footer/Footer";
+import ProjectPage from "./ProjectPage/ProjectPage";
 
 const App = () => {
   return (
     <>
-      <span id="homeSection">
+      <ProjectPage />
+      {/* <span id="homeSection">
         <WebHeader />
         <MobileHeader />
         <Title />
@@ -23,7 +25,7 @@ const App = () => {
         <ProjectSection />
         <ScrollBtn />
         <Footer />
-      </span>
+      </span> */}
     </>
   );
 };

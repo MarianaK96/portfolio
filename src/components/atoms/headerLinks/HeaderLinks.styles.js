@@ -6,7 +6,7 @@ export const HeaderLinkStyles = styled.a`
   font-weight: 600;
   text-decoration: none;
   color: #ffffff;
-  background-color: #151414;
+  background-color: #232121;
 
   box-shadow: -3px 8px 12px 0 rgb(0 0 0 / 0.2),
     10px 5px 20px 0 rgb(60 56 56 / 0.5);

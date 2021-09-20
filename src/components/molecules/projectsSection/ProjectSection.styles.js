@@ -15,13 +15,13 @@ export const ImageWrapper = styled.div`
   justify-content: center;
 
   & > img {
-    width: 334px;
+    width: 250px;
     height: 150px;
     border-radius: 5px;
     margin-bottom: 0;
 
     @media ${device.sm} {
-      width: 468px;
+      width: 450px;
       height: 250px;
       border-radius: 5px;
       margin-bottom: 0;

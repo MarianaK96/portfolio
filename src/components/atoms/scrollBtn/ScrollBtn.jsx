@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import ScrollBtnIcon from "../../../images/arrow-up-circle .svg";
 import { FiArrowUp } from "react-icons/fi";
 import { ScrollBtnStyles, IconStyle } from "./ScrollBtnStyles.styles";
 
-const ScrollBtn = () => {
+const ScrollBtn = ({ btn }) => {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  window.addEventListener("scroll", toggleVisible);
+
   return (
     <>
-      <ScrollBtnStyles href="#homeSection">
+      <ScrollBtnStyles href="#homeSection" visible={visible}>
         <img src={ScrollBtnIcon} alt="" />
       </ScrollBtnStyles>
     </>

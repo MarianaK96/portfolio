@@ -1,19 +1,19 @@
 import React from "react";
-import { TitleWrapper } from "../../components/atoms/about/about.styles";
+import { TitleWrapper } from "../../components/molecules/SectionStyles.styles";
 import {
   SectionPadding,
   ParagraphWrapper,
   FooterWrapper,
   Underline,
-} from "./projects.styles";
-import { PaddingWrapper } from "./globals/global.styles";
+} from "./ProjectPageStyles";
+import { PaddingWrapper } from "../../globals/global.styles";
 import {
   IconsWrapper,
   ImageWrapper,
-} from "../src/components/molecules/projectsSection/ProjectSection.styles";
+} from "../../components/molecules/projectsSection/ProjectSection.styles";
 import GithubIcon from "../../images/github.svg";
 
-const ProjectOnePage = () => {
+const ProjectPage = ({ img, link }) => {
   return (
     <>
       <PaddingWrapper>
@@ -22,19 +22,8 @@ const ProjectOnePage = () => {
             <h1>Project One</h1>
           </TitleWrapper>
           <ImageWrapper>
-            <img
-              src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?cs=srgb&dl=pexels-lumn-167699.jpg&fm=jpg"
-              alt=""
-            />
+            <img src={img} alt="" />
           </ImageWrapper>
-          <iframe
-            src="https://mk-digital-clock.netlify.app/"
-            title="embedded clock"
-            width="10rem"
-            height="5rem"
-          >
-            {" "}
-          </iframe>
           <ParagraphWrapper>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
@@ -45,9 +34,9 @@ const ProjectOnePage = () => {
           </ParagraphWrapper>
           <Underline></Underline>
           <FooterWrapper>
-            <a href="">Home</a>
+            <a href="#homeSection">Home</a>
             <IconsWrapper>
-              <a href="https://github.com/MarianaK96">
+              <a href={link}>
                 <img src={GithubIcon} alt="" />
               </a>
             </IconsWrapper>
@@ -58,4 +47,4 @@ const ProjectOnePage = () => {
   );
 };
 
-export default ProjectOnePage;
+export default ProjectPage;
