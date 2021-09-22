@@ -43,7 +43,7 @@ export const Project = styled.div`
 
 export const TestTitle = styled.a`
   padding-top: 0.5rem;
-  padding-right: 0.5rem;
+  padding-right: 2.5rem;
   float: right;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -51,22 +51,10 @@ export const TestTitle = styled.a`
   font-weight: 100;
   @media ${device.sm} {
     font-size: 1.5rem;
+    padding-right: 6.5rem;
   }
 
   @media ${device.lg} {
-  }
-`;
-
-export const IconsWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-
-  & > img {
-    margin-right: 0.5rem;
-    transform: scale(0.7);
-  }
-
-  & > a {
-    transform: scale(0.7);
+    padding-right: 0.5rem;
   }
 `;

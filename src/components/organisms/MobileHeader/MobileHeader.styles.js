@@ -1,21 +1,17 @@
 import styled from "styled-components";
-import { size, device } from "../../../globals/breakpoints";
+import { device } from "../../../globals/breakpoints";
 
-export const MobileMenu = styled.a`
-  width: 90vw;
-  padding-right: 2.5rem;
-  padding-top: 2.5rem;
-  display: flex;
-  justify-content: flex-end;
+export const MobileHeaderStyles = styled.div`
   position: fixed;
-  & > img {
-    transform: scale(1.2);
-    @media ${device.sm} {
-      transform: scale(1.8);
-    }
-  }
-
+  top: 0;
   @media ${device.lg} {
     display: none;
   }
+`;
+
+export const ModalOpen = styled.div`
+  visibility: ${({ menuOpen }) => {
+    console.log("menuOpen", menuOpen);
+    return menuOpen ? "hidden" : "visible";
+  }};
 `;

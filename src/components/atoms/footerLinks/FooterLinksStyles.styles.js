@@ -8,7 +8,7 @@ export const FooterLinkStyles = styled.a`
   
 
   & > img {
-    transform: scale(2);
+    transform: scale(1.7);
 
     @media ${device.sm} {
       transform: scale(2);

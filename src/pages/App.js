@@ -9,12 +9,15 @@ import MobileHeader from "../components/organisms/MobileHeader/MobileHeader";
 import WebHeader from "../components/organisms/WebHeader/WebHeader";
 import ScrollBtn from "../components/atoms/scrollBtn/ScrollBtn";
 import Footer from "../components/organisms/Footer/Footer";
-import ProjectPage from "./ProjectPage/ProjectPage";
+import ProjectOnePage from "./ProjectOnePage";
+import ProjectTwoPage from "./ProjectTwoPage";
+import ProjectThreePage from "./ProjectThreePage";
 
 const App = () => {
   return (
     <>
-      <ProjectPage />
+      <ProjectThreePage />
+      {/* <ProjectPage /> */}
       {/* <span id="homeSection">
         <WebHeader />
         <MobileHeader />

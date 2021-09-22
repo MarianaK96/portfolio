@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../../../globals/breakpoints";
 
 export const ModalStyle = styled.div`
-  background-color: white;
+  background-color: #f8f8ff;
   display: flex;
   justify-content: space-evenly;
   padding-top: 5rem;
@@ -12,15 +12,13 @@ export const ModalStyle = styled.div`
   top: 0;
   z-index: 5;
 
-  display: ${({ modal }) => (modal ? "flex" : "none")};
-
   @media ${device.sm} {
     padding-top: 7rem;
     padding-bottom: 6.2rem;
   }
 
   & > a {
-    color: black;
+    color: #1a1919;
     display: inline;
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
@@ -64,3 +62,4 @@ export const CloseBtnStyle = styled.div`
   }
 `;
 // display: ${modal ? "inline" : "hidden"};
+// display: ${({ modal }) => (modal ? "flex" : "none")};
