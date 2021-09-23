@@ -1,34 +1,29 @@
 import React, { useEffect, useRef } from "react";
-import { global } from "../globals/global.css";
-import Title from "../components/atoms/title/Title";
-import DiscoverBtn from "../components/atoms/discoverBtn/discoverBtn";
-import AboutSection from "../components/molecules/aboutSection/AboutSection";
-import SkillsSection from "../components/molecules/skillsSection/SkillsSection";
-import ProjectSection from "../components/molecules/projectsSection/ProjectSection";
-import MobileHeader from "../components/organisms/MobileHeader/MobileHeader";
-import WebHeader from "../components/organisms/WebHeader/WebHeader";
-import ScrollBtn from "../components/atoms/scrollBtn/ScrollBtn";
-import Footer from "../components/organisms/Footer/Footer";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProjectOnePage from "./ProjectOnePage";
 import ProjectTwoPage from "./ProjectTwoPage";
 import ProjectThreePage from "./ProjectThreePage";
+import Home from "./Home";
 
 const App = () => {
   return (
     <>
-      <ProjectThreePage />
-      {/* <ProjectPage /> */}
-      {/* <span id="homeSection">
-        <WebHeader />
-        <MobileHeader />
-        <Title />
-        <DiscoverBtn />
-        <AboutSection />
-        <SkillsSection />
-        <ProjectSection />
-        <ScrollBtn />
-        <Footer />
-      </span> */}
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/project-one">
+            <ProjectOnePage />
+          </Route>
+          <Route exact path="/project-two">
+            <ProjectTwoPage />
+          </Route>
+          <Route exact path="/project-three">
+            <ProjectThreePage />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 };

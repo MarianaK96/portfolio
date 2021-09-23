@@ -3,6 +3,7 @@ import { device } from "../../../globals/breakpoints";
 
 export const ScrollBtnStyles = styled.a`
   cursor: pointer;
+  transition: 1s;
 
   position: fixed;
   bottom: 5%;

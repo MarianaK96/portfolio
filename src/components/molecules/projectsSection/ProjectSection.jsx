@@ -1,13 +1,12 @@
 import React from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter, Link, NavLink } from "react-router-dom";
 
 import { PaddingWrapper, PaddingTop } from "../../../globals/global.styles";
 import { TitleWrapper, ParagraphWrapper } from "../SectionStyles.styles";
 import {
   ImageWrapper,
-  ProjectTitle,
   Project,
-  TestTitle,
+  ProjectTitle,
   IconsWrapper,
   ProjectWrapper,
 } from "./ProjectSection.styles";
@@ -20,33 +19,30 @@ const ProjectSection = () => {
     <>
       <PaddingWrapper>
         <PaddingTop />
-        <TitleWrapper id="projectsSection">
-          <h1>Projects</h1>
+        <TitleWrapper>
+          <h1 id="projectsSection">Projects</h1>
         </TitleWrapper>
         <ProjectWrapper>
           <Project>
-            <ImageWrapper>
+            <ImageWrapper to="/project-one">
               <img src={DigitalClock} alt="image of code on a screen" />
             </ImageWrapper>
-            <TestTitle href="/Users/marianakoudela/Desktop/react_portfolio/src/pages/ProjectPage/ProjectPage.js">
-              Digital Clock
-            </TestTitle>
+
+            <ProjectTitle to="/project-one">Digital Clock</ProjectTitle>
           </Project>
 
           <Project>
-            <ImageWrapper>
+            <ImageWrapper to="/project-two">
               <img src={ConversationCards} alt="image of code on a screen" />
             </ImageWrapper>
-            <TestTitle href="/Users/marianakoudela/Desktop/react_portfolio/src/ProjectPage.js">
-              Conversation Starters
-            </TestTitle>
+            <ProjectTitle to="/project-two">Conversation Starters</ProjectTitle>
           </Project>
 
           <Project>
-            <ImageWrapper>
+            <ImageWrapper to="/project-three">
               <img src={Portfolio} alt="image of code on a screen" />
             </ImageWrapper>
-            <TestTitle href="src/ProjectPage.js">Portfolio</TestTitle>
+            <ProjectTitle to="/project-three">Portfolio</ProjectTitle>
           </Project>
         </ProjectWrapper>
       </PaddingWrapper>

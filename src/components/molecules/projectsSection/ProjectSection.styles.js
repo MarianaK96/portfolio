@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { size, device } from "../../../globals/breakpoints";
+import { Link } from "react-router-dom";
 
 export const ProjectWrapper = styled.div`
   @media ${device.lg} {
@@ -10,7 +11,7 @@ export const ProjectWrapper = styled.div`
   }
 `;
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled(Link)`
   display: flex;
   justify-content: center;
 
@@ -41,7 +42,7 @@ export const Project = styled.div`
   }
 `;
 
-export const TestTitle = styled.a`
+export const ProjectTitle = styled(Link)`
   padding-top: 0.5rem;
   padding-right: 2.5rem;
   float: right;

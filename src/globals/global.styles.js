@@ -16,5 +16,9 @@ export const PaddingWrapper = styled.div`
   }
 `;
 export const PaddingTop = styled.div`
-  padding-top: 6rem;
+  padding-top: 3rem;
+
+  @media ${device.sm} {
+    padding-top: 6rem;
+  }
 `;

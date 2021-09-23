@@ -12,7 +12,11 @@ export const ProjectsTitle = styled.h1`
   }
 `;
 export const SectionPadding = styled.div`
-  padding-top: 3rem;
+  padding-top: 1rem;
+
+  @media ${device.sm} {
+    padding-top: 2rem;
+  }
 `;
 
 export const ParagraphWrapper = styled.div`
@@ -33,26 +37,29 @@ export const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
 
-  border-top: 3px solid white;
+  border-top: 1px solid white;
   width: 100%;
   padding-top: 1rem;
+  padding-bottom: 0.5rem;
+
+  @media ${device.sm} {
+    border-top: 2px solid white;
+  }
 
   & > a {
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.3;
     color: #f8f8ff;
     font-family: "Montserrat", sans-serif;
     margin-top: 0;
     text-decoration: none;
-    padding-right: 3rem;
-  }
-`;
+    padding-right: 2rem;
 
-export const Underline = styled.div`
-  padding-top: 3rem;
-  margin-bottom: 2rem;
-  border-bottom: 3px solid white;
+    @media ${device.sm} {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 export const ProjectImageWrapper = styled.div`
@@ -108,6 +115,10 @@ export const ProjectPaddingWrapper = styled.div`
 `;
 
 export const IconsWrapper = styled.a`
+transform: scale(0.9);
 
+@media ${device.sm} {
+  transform: scale(1);
+}
   }
 `;

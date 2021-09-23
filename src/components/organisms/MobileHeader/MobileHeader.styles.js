@@ -9,9 +9,9 @@ export const MobileHeaderStyles = styled.div`
   }
 `;
 
-export const ModalOpen = styled.div`
-  visibility: ${({ menuOpen }) => {
-    console.log("menuOpen", menuOpen);
-    return menuOpen ? "hidden" : "visible";
-  }};
-`;
+// export const ModalOpen = styled.div`
+//   visibility: ${({ menuOpen }) => {
+//     console.log("menuOpen", menuOpen);
+//     return menuOpen ? "hidden" : "visible";
+//   }};
+// `;

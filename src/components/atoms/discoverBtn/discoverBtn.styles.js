@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { device } from "../../../globals/breakpoints";
 
 export const BtnStyle = styled.div`
-  padding-top: 3rem;
+  padding-top: 2rem;
   width: 8rem;
   margin-bottom: 0.75rem;
   @media ${device.sm} {
     width: 10rem;
+    padding-top: 3rem;
   }
 
   & > a {

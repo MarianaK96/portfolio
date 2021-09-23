@@ -12,9 +12,9 @@ const SkillsSection = () => {
         </TitleWrapper>
         <ParagraphWrapper>
           <p>
-            I am proficient in <b>Javascript</b> , <b>CSS</b> and <b>HTML5</b>.
-            I generally work with <b>React</b> and have familiarity with both
-            <b>Next js</b> and <b>Gatsby js</b>.
+            I am proficient in <b>Javascript</b>, <b>CSS</b> and <b>HTML5</b>. I
+            generally work with <b>React</b> and have familiarity with both
+            <b> Next.js</b> and <b>Gatsby.js</b>.
           </p>
         </ParagraphWrapper>
       </PaddingWrapper>

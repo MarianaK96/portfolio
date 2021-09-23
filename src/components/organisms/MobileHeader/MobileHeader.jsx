@@ -13,10 +13,14 @@ const MobileHeader = () => {
   return (
     <>
       <MobileHeaderStyles>
-        <MenuBtn menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <ModalOpen menuOpen={menuOpen}>
-          <Modal menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        </ModalOpen>
+        <MenuBtn
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+          }}
+        />
+        <Modal menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </MobileHeaderStyles>
     </>
   );
@@ -33,3 +37,9 @@ export default MobileHeader;
 // <MobileMenu icon={icon}>
 // <img src={MenuIcon} alt="menu-icon" onClick={() => setModal(true)} />
 // </MobileMenu>
+
+{
+  /* <ModalOpen menuOpen={menuOpen}>
+<Modal menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+</ModalOpen> */
+}

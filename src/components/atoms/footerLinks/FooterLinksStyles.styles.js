@@ -3,8 +3,13 @@ import { device } from "../../../globals/breakpoints";
 
 export const FooterLinkStyles = styled.a`
   cursor: pointer;
-  margin-right: 2rem;
-  padding-left: 3rem;
+  margin-right: 1rem;
+  padding-left: 2rem;
+
+  @media ${device.sm} {
+    margin-right: 2rem;
+    padding-left: 3rem;
+  }
   
 
   & > img {

@@ -11,8 +11,8 @@ const AboutSection = () => {
     <>
       <PaddingWrapper>
         <SectionPadding></SectionPadding>
-        <TitleWrapper>
-          <h1 id="aboutMeSection">About me</h1>
+        <TitleWrapper id="aboutMeSection">
+          <h1>About me</h1>
         </TitleWrapper>
         <ParagraphWrapper>
           <p>

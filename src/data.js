@@ -43,7 +43,7 @@ export const footerData = [
 export const projectsData = [
   {
     name: "Digital Clock",
-    link: "https://github.com/MarianaK96/digitalClock",
+    link: "https://github.com/MarianaK96/digital-clock",
     img: DigitalClock,
     about:
       "Using React, I created a retro-looking digital clock with an emphasis on a sleek, minimal design. This was a great opportunity for me to practice my CSS skills, as well as a new-found love for neumorphism.",

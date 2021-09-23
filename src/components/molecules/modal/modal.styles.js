@@ -5,16 +5,18 @@ export const ModalStyle = styled.div`
   background-color: #f8f8ff;
   display: flex;
   justify-content: space-evenly;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  position: fixed;
+  align-items: center;
+
+  height: ${({ menuOpen }) => (menuOpen ? "0" : "11rem")};
+
+  position: absolute;
   width: 100vw;
   top: 0;
   z-index: 5;
-
+  transition: 0.5s;
+  overflow-y: hidden;
   @media ${device.sm} {
-    padding-top: 7rem;
-    padding-bottom: 6.2rem;
+    height: 13.2rem;
   }
 
   & > a {
@@ -63,3 +65,5 @@ export const CloseBtnStyle = styled.div`
 `;
 // display: ${modal ? "inline" : "hidden"};
 // display: ${({ modal }) => (modal ? "flex" : "none")};
+// padding-top: 5rem;
+// padding-bottom: 4rem;

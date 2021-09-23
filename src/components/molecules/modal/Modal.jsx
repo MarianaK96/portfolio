@@ -4,20 +4,22 @@ import { ModalStyle } from "./Modal.styles";
 const Modal = ({ menuOpen, setMenuOpen }) => {
   return (
     <>
-      <ModalStyle>
-        <a href="#aboutMeSection" onClick={() => setMenuOpen(false)}>
+      <ModalStyle menuOpen={menuOpen}>
+        <a href="#aboutMeSection" onClick={() => setMenuOpen(!menuOpen)}>
           About
         </a>
         <p>|</p>
-        <a href="#skillsSection" onClick={() => setMenuOpen(false)}>
+        <a href="#skillsSection" onClick={() => setMenuOpen(!menuOpen)}>
           Skills
         </a>
         <p>|</p>
-        <a href="#skillsSection" onClick={() => setMenuOpen(false)}>
+        <a href="#projectsSection" onClick={() => setMenuOpen(!menuOpen)}>
           Projects
         </a>
         <p>|</p>
-        <a href="">Contact</a>
+        <a href="#contactSection" onClick={() => setMenuOpen(!menuOpen)}>
+          Contact
+        </a>
       </ModalStyle>
     </>
   );

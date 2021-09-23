@@ -10,6 +10,7 @@ import {
   IconsWrapper,
   SiteLink,
 } from "./ProjectPageStyles";
+import { Link } from "react-router-dom";
 import GithubIcon from "../../../images/github.svg";
 
 import { projectsData } from "../../../data";
@@ -39,10 +40,8 @@ const ProjectPage = ({ img, link, name, about, siteLink, index }) => {
           </ParagraphWrapper>
 
           <FooterWrapper>
-            <Underline />
-            <a href="#homeSection">Home</a>
-
-            <IconsWrapper href={link}>
+            <Link to="/">Home</Link>
+            <IconsWrapper onClick={() => openLink(link)}>
               <img src={GithubIcon} alt="" />
             </IconsWrapper>
           </FooterWrapper>

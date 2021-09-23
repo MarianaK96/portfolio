@@ -1,19 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../../globals/breakpoints";
 
-// export const Wrapper = styled.div`
-//   height: 400px;
-//   width: 400px;
-//   background-color: ${({ on }) => on ? "red" : "white"};
-
-//declaring the property in
-// on={on}
-
-//   & > button {
-//     color: blue;
-//   }
-// `
-
 export const HeadingWrapper = styled.div`
   & > h1 {
     font-size: 4rem;
