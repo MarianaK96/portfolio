@@ -3,7 +3,6 @@ import {
   SectionPadding,
   ParagraphWrapper,
   FooterWrapper,
-  Underline,
   ProjectsTitle,
   ProjectImageWrapper,
   ProjectPaddingWrapper,

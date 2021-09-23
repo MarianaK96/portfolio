@@ -3,8 +3,6 @@ import { Wrapper, HeadingWrapper, SubtitleWrapper } from "./Title.styles";
 import { PaddingWrapper, PaddingTop } from "../../../globals/global.styles";
 
 const Title = () => {
-  const [on, setOn] = useState(false);
-
   return (
     <>
       <PaddingWrapper>
@@ -24,8 +22,3 @@ const Title = () => {
 };
 
 export default Title;
-
-//BUG
-//className={`${styles["subtitle"]}`} - cannot be READ
-// styles not applying even with the above, only when I apply to all h1/p tags
-//the classname appears in the developer, but styles do not apply

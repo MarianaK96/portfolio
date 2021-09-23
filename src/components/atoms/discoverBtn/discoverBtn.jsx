@@ -1,6 +1,6 @@
 import React from "react";
 import { PaddingWrapper } from "../../../globals/global.styles";
-import { BtnStyle, Underline, Animation } from "./discoverBtn.styles";
+import { BtnStyle, Underline } from "./discoverBtn.styles";
 
 const DiscoverBtn = () => {
   return (

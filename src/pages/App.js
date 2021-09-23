@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProjectOnePage from "./ProjectOnePage";
 import ProjectTwoPage from "./ProjectTwoPage";

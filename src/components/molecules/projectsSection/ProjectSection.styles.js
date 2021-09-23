@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { size, device } from "../../../globals/breakpoints";
+import { device } from "../../../globals/breakpoints";
 import { Link } from "react-router-dom";
 
 export const ProjectWrapper = styled.div`

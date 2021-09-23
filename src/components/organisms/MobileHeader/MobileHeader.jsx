@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import MenuBtn from "../../atoms/menuBtn/MenuBtn";
 import Modal from "../../molecules/modal/Modal";
 import { MobileHeaderStyles } from "./MobileHeader.styles";
@@ -22,19 +22,3 @@ const MobileHeader = () => {
 };
 
 export default MobileHeader;
-
-{
-  /* <CloseBtnStyle>
-<img src={CloseIcon} alt="" onClick={() => setModal(false)} />
-</CloseBtnStyle> */
-}
-
-// <MobileMenu icon={icon}>
-// <img src={MenuIcon} alt="menu-icon" onClick={() => setModal(true)} />
-// </MobileMenu>
-
-{
-  /* <ModalOpen menuOpen={menuOpen}>
-<Modal menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-</ModalOpen> */
-}

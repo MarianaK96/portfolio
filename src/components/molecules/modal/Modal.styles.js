@@ -63,7 +63,3 @@ export const CloseBtnStyle = styled.div`
     }
   }
 `;
-// display: ${modal ? "inline" : "hidden"};
-// display: ${({ modal }) => (modal ? "flex" : "none")};
-// padding-top: 5rem;
-// padding-bottom: 4rem;
