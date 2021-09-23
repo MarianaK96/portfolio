@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MenuBtn from "../../atoms/menuBtn/MenuBtn";
 import Modal from "../../molecules/modal/Modal";
-import MenuIcon from "../../../images/menu.svg";
-
-import { CloseBtnStyle, ModalStyle } from "../../molecules/modal/Modal.styles";
-import CloseIcon from "../../../images/x-circle.svg";
-
-import { MobileHeaderStyles, ModalOpen } from "./MobileHeader.styles";
+import { MobileHeaderStyles } from "./MobileHeader.styles";
 
 const MobileHeader = () => {
   const [menuOpen, setMenuOpen] = useState(true);

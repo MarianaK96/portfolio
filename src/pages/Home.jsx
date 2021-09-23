@@ -1,6 +1,6 @@
 import React from "react";
 import { global } from "../globals/global.css";
-// import Title from "../components/atoms/title/Title";
+import Title from "../components/atoms/title/Title";
 import DiscoverBtn from "../components/atoms/discoverBtn/discoverBtn";
 import AboutSection from "../components/molecules/aboutSection/AboutSection";
 import SkillsSection from "../components/molecules/skillsSection/SkillsSection";
@@ -16,7 +16,7 @@ const Home = () => {
       <span id="homeSection">
         <WebHeader />
         <MobileHeader />
-        {/* <Title /> */}
+        <Title />
         <DiscoverBtn />
         <AboutSection />
         <SkillsSection />
