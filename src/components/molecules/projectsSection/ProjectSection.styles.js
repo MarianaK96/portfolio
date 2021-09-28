@@ -30,6 +30,26 @@ export const ImageWrapper = styled(Link)`
   }
 `;
 
+export const ImageWrapperThree = styled(Link)`
+  display: flex;
+  justify-content: center;
+
+  & > img {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    box-shadow: 3px 5px 20px #434141;
+
+    @media ${device.sm} {
+      width: 450px;
+      height: 250px;
+      border-radius: 5px;
+      margin-bottom: 0;
+    }
+  }
+`;
+
 export const Project = styled.div`
   padding-bottom: 3rem;
 

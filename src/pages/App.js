@@ -19,9 +19,6 @@ const App = () => {
           <Route exact path="/project-two">
             <ProjectTwoPage />
           </Route>
-          <Route exact path="/project-three">
-            <ProjectThreePage />
-          </Route>
         </Switch>
       </Router>
     </>

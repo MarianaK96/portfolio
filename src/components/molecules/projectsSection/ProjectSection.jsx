@@ -3,6 +3,7 @@ import { PaddingWrapper, PaddingTop } from "../../../globals/global.styles";
 import { TitleWrapper } from "../SectionStyles.styles";
 import {
   ImageWrapper,
+  ImageWrapperThree,
   Project,
   ProjectTitle,
   IconsWrapper,
@@ -36,17 +37,10 @@ const ProjectSection = () => {
             <ImageWrapper to="/project-two">
               <img
                 src={ConversationCards}
-                alt="a black card with 'conversation starter' written on it, on a white background"
+                alt="a black card with 'conversation starter' written on it on a white background"
               />
             </ImageWrapper>
             <ProjectTitle to="/project-two">Conversation Starters</ProjectTitle>
-          </Project>
-
-          <Project>
-            <ImageWrapper to="/project-three">
-              <img src={Portfolio} alt="a screenshot of this portfolio" />
-            </ImageWrapper>
-            <ProjectTitle to="/project-three">Portfolio</ProjectTitle>
           </Project>
         </ProjectWrapper>
       </PaddingWrapper>
@@ -55,16 +49,3 @@ const ProjectSection = () => {
 };
 
 export default ProjectSection;
-
-// <IconsWrapper>
-// <a href="https://github.com/MarianaK96">
-//   <img src={GithubIcon} alt="" />
-// </a>
-// <img src={HelpIcon} alt="" />
-// </IconsWrapper>
-//         <IconsWrapper>
-//         <a href="https://github.com/MarianaK96">
-//           <img src={GithubIcon} alt="" />
-//         </a>
-//         <img src={HelpIcon} alt="" />
-//       </IconsWrapper>

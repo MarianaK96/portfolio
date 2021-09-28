@@ -21,8 +21,9 @@ const AboutSection = () => {
           </p>
           <p>
             During this time I decided to switch paths and embark on a
-            self-taught journey to web development where I have a keen interest
-            in <b>design</b> and <b>user experience</b>.
+            self-taught journey into web development where I have an opportunity
+            to explore my keen interest in <b>design</b> and{" "}
+            <b>user experience</b>.
           </p>
         </ParagraphWrapper>
       </PaddingWrapper>
