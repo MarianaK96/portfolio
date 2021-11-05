@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProjectOnePage from "./ProjectOnePage";
 import ProjectTwoPage from "./ProjectTwoPage";
@@ -18,9 +18,6 @@ const App = () => {
           </Route>
           <Route exact path="/project-two">
             <ProjectTwoPage />
-          </Route>
-          <Route exact path="/project-three">
-            <ProjectThreePage />
           </Route>
         </Switch>
       </Router>

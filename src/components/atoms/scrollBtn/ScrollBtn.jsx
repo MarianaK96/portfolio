@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ScrollBtnIcon from "../../../images/arrow-up-circle .svg";
-import { FiArrowUp } from "react-icons/fi";
-import { ScrollBtnStyles, IconStyle } from "./ScrollBtnStyles.styles";
+import { ScrollBtnStyles } from "./ScrollBtnStyles.styles";
 
 const ScrollBtn = ({ btn }) => {
   const [visible, setVisible] = useState(false);

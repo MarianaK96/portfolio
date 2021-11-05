@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { size, device } from "../../../globals/breakpoints";
+import { device } from "../../../globals/breakpoints";
 import { Link } from "react-router-dom";
 
 export const ProjectWrapper = styled.div`
@@ -20,6 +20,26 @@ export const ImageWrapper = styled(Link)`
     height: 150px;
     border-radius: 5px;
     margin-bottom: 0;
+
+    @media ${device.sm} {
+      width: 450px;
+      height: 250px;
+      border-radius: 5px;
+      margin-bottom: 0;
+    }
+  }
+`;
+
+export const ImageWrapperThree = styled(Link)`
+  display: flex;
+  justify-content: center;
+
+  & > img {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    box-shadow: 3px 5px 20px #434141;
 
     @media ${device.sm} {
       width: 450px;

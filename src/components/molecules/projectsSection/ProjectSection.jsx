@@ -1,10 +1,9 @@
 import React from "react";
-import { BrowserRouter, Link, NavLink } from "react-router-dom";
-
 import { PaddingWrapper, PaddingTop } from "../../../globals/global.styles";
-import { TitleWrapper, ParagraphWrapper } from "../SectionStyles.styles";
+import { TitleWrapper } from "../SectionStyles.styles";
 import {
   ImageWrapper,
+  ImageWrapperThree,
   Project,
   ProjectTitle,
   IconsWrapper,
@@ -25,7 +24,10 @@ const ProjectSection = () => {
         <ProjectWrapper>
           <Project>
             <ImageWrapper to="/project-one">
-              <img src={DigitalClock} alt="image of code on a screen" />
+              <img
+                src={DigitalClock}
+                alt="a digital clock created using code"
+              />
             </ImageWrapper>
 
             <ProjectTitle to="/project-one">Digital Clock</ProjectTitle>
@@ -33,16 +35,12 @@ const ProjectSection = () => {
 
           <Project>
             <ImageWrapper to="/project-two">
-              <img src={ConversationCards} alt="image of code on a screen" />
+              <img
+                src={ConversationCards}
+                alt="a black card with 'conversation starter' written on it on a white background"
+              />
             </ImageWrapper>
             <ProjectTitle to="/project-two">Conversation Starters</ProjectTitle>
-          </Project>
-
-          <Project>
-            <ImageWrapper to="/project-three">
-              <img src={Portfolio} alt="image of code on a screen" />
-            </ImageWrapper>
-            <ProjectTitle to="/project-three">Portfolio</ProjectTitle>
           </Project>
         </ProjectWrapper>
       </PaddingWrapper>
@@ -51,16 +49,3 @@ const ProjectSection = () => {
 };
 
 export default ProjectSection;
-
-// <IconsWrapper>
-// <a href="https://github.com/MarianaK96">
-//   <img src={GithubIcon} alt="" />
-// </a>
-// <img src={HelpIcon} alt="" />
-// </IconsWrapper>
-//         <IconsWrapper>
-//         <a href="https://github.com/MarianaK96">
-//           <img src={GithubIcon} alt="" />
-//         </a>
-//         <img src={HelpIcon} alt="" />
-//       </IconsWrapper>

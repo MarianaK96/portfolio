@@ -3,8 +3,6 @@ import { Wrapper, HeadingWrapper, SubtitleWrapper } from "./Title.styles";
 import { PaddingWrapper, PaddingTop } from "../../../globals/global.styles";
 
 const Title = () => {
-  const [on, setOn] = useState(false);
-
   return (
     <>
       <PaddingWrapper>

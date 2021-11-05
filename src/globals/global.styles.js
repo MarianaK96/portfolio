@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { size, device } from "./breakpoints";
+import { device } from "./breakpoints";
 
 export const PaddingWrapper = styled.div`
   padding-left: 2.5rem;

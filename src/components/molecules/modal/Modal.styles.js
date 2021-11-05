@@ -16,7 +16,7 @@ export const ModalStyle = styled.div`
   transition: 0.5s;
   overflow-y: hidden;
   @media ${device.sm} {
-    height: 13.2rem;
+    height: ${({ menuOpen }) => (menuOpen ? "0" : "15.5rem")};
   }
 
   & > a {
@@ -63,7 +63,3 @@ export const CloseBtnStyle = styled.div`
     }
   }
 `;
-// display: ${modal ? "inline" : "hidden"};
-// display: ${({ modal }) => (modal ? "flex" : "none")};
-// padding-top: 5rem;
-// padding-bottom: 4rem;
