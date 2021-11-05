@@ -15,7 +15,7 @@ const Title = () => {
         <SubtitleWrapper>
           <p>
             I’m Mariana, <br /> a junior web-developer currently based in
-            Cardiff.
+            London.
           </p>
         </SubtitleWrapper>
       </PaddingWrapper>
@@ -24,8 +24,3 @@ const Title = () => {
 };
 
 export default Title;
-
-//BUG
-//className={`${styles["subtitle"]}`} - cannot be READ
-// styles not applying even with the above, only when I apply to all h1/p tags
-//the classname appears in the developer, but styles do not apply
