@@ -29,7 +29,9 @@ const ProjectPage = ({ img, link, name, about, siteLink, index }) => {
           </ProjectImageWrapper>
 
           {projectsData[index].hasOwnProperty("siteLink") && (
-            <SiteLink href={siteLink}>Visit site</SiteLink>
+            <SiteLink href="" onClick={() => openLink(siteLink)}>
+              Visit site
+            </SiteLink>
           )}
 
           <ParagraphWrapper>
@@ -49,5 +51,3 @@ const ProjectPage = ({ img, link, name, about, siteLink, index }) => {
 };
 
 export default ProjectPage;
-
-//onClick={() => openLink(siteLink)}
